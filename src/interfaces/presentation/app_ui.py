@@ -105,11 +105,11 @@ def pagina_panel_cliente():
 
 if __name__ in ["__main__", "__mp_main__"]:
     import os
-    puerto = int(os.environ.get("PORT", 8080))
+    puerto_render = int(os.environ.get("PORT", 8080))
     ui.run(
-        title="AutoVentas Pro",
         host="0.0.0.0",
-        port=puerto,
+        port=puerto_render,
+        title="AutoVentas Pro",
         reload=False,
         favicon="🚗",
         storage_secret="autoventas-pro-admin",
